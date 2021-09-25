@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: chocolate;
+  background-image: url(./coffeeBackround-2.jpg);
+  font-family: "Just Another Hand", cursive;
+}
+.column-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  min-width: 650px;
+}
+.column {
+  margin: 10px;
+  margin-top: 0px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 40px);
+}
+.container.left {
+  margin-top: 25px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-header {
+  font-size: 57px;
+  color: black;
+  position: relative;
+  background-color: #79554800;
+  top: 8px;
+  letter-spacing: 3px;
+  /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); */
+}
+#big_coffee {
+  user-select: none;
+  font-size: 160px;
+  cursor: pointer;
+  /* box-shadow: 10px 5px 5px black; */
+}
+
+.round {
+  border-radius: 50%;
+  transform: rotate(1turn);
+}
+
+.counter-container {
+  font-size: 68px;
+  margin: 10px;
+  letter-spacing: 4px;
+}
+
+.cps-container {
+  font-size: 45px;
+  color: #795548;
+}
+
+#producer_container {
+  padding: 10px;
+  overflow: auto;
+  border: 3px #795548 solid;
+  border-radius: 5px;
+  font-size: 30px;
+  box-shadow: 15px 5px 31px #795548;
+  letter-spacing: 1px;
+}
+
+.producer {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 2px solid #795548;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.producer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producer-title {
+  font-size: 40px;
+}
+
+.producer button {
+  font-size: 18px;
+  width: 50px;
+  border-radius: 5px;
+  border: 2px solid #795548;
+  text-align: center;
+  font-family: fantasy;
+}
